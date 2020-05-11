@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  font-family: 'Natasha';
+  font-size: 37px;
+  color: #22241b;
+  line-height: 1.48em;
+  letter-spacing: 0.12em;
+}
+
+h3 {
+  font-family: 'Natasha';
+  font-size: 22px;
+  color: #7e7f7b;
+  line-height: 2.5em;
+  letter-spacing: 0.12em;
+}
+
+img {
+  border-style: none;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  border: none;
+  display: inline-block;
+}
+
+button:hover,
+button:focus,
+input:hover,
+input:focus {
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1;
+  bottom: 0px;
+  padding: 0px;
+  word-spacing: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Museo Sans 300', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  color: #22241b;
+}
