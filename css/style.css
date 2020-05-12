@@ -385,13 +385,6 @@ body {
   padding-bottom: 150px;
   background-color: #53354a;
   color: #fff;
-  transition: all 0.3s linear;
-}
-
-.cite:hover .cite__block-text,
-.cite:focus .cite__block-text {
-  color: #53354a;
-  background-color: #c5c5c5;
 }
 
 .cite__text {
