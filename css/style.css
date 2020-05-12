@@ -534,7 +534,7 @@ body {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 575px) {
   .menu {
     flex-direction: column;
     align-items: center;
@@ -564,5 +564,17 @@ body {
 
   .footer__text {
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu__link:hover::after,
+  .menu__link:focus::after {
+    width: 0;
+  }
+
+  .menu__link_lch:hover::after,
+  .menu__link_lch:focus::after {
+    width: 0;
   }
 }
