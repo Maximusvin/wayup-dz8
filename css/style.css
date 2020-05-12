@@ -511,6 +511,10 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+  .menu__item:not(:last-child) {
+    margin-right: 0;
+  }
+
   .teams {
     padding-bottom: 62px;
   }
@@ -537,7 +541,6 @@ body {
   }
 
   .menu__item:not(:last-child) {
-    margin-right: 0;
     margin-bottom: 7px;
   }
 
