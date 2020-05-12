@@ -193,6 +193,11 @@ body {
   margin-bottom: 73px;
 }
 
+.features__item:hover .features__title::before,
+.features__item:focus .features__title::before {
+  transform: rotateY(180deg);
+}
+
 .features__title {
   color: #2d3033;
   font-size: 14px;
@@ -210,6 +215,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50%;
   margin-bottom: 31px;
+  transition: all 0.5s linear;
 }
 
 .features__title_icon1::before {
@@ -379,6 +385,13 @@ body {
   padding-bottom: 150px;
   background-color: #53354a;
   color: #fff;
+  transition: all 0.3s linear;
+}
+
+.cite:hover .cite__block-text,
+.cite:focus .cite__block-text {
+  color: #53354a;
+  background-color: #c5c5c5;
 }
 
 .cite__text {
