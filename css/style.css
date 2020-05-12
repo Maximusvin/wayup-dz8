@@ -382,7 +382,7 @@ body {
 }
 
 .cite__text {
-  width: 505px;
+  max-width: 505px;
   font-size: 36px;
   line-height: 1.16em;
   font-style: italic;
@@ -446,7 +446,7 @@ body {
 }
 
 .footer__text {
-  width: 340px;
+  max-width: 340px;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -457,4 +457,7 @@ body {
 
 .footer__text a {
   color: #ffffff;
+}
+
+@media screen and (max-width: 1999px) {
 }
