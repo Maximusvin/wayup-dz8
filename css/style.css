@@ -53,10 +53,6 @@ input[type='radio'].visually-hidden {
   overflow: hidden;
 }
 
-.container {
-  padding: 0;
-}
-
 .btn {
   font-weight: 700;
   font-size: 13px;
