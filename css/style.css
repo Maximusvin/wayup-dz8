@@ -175,21 +175,17 @@ body {
 .offer__btn:hover,
 .offer__btn:focus {
   box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
-  background-color: rgb(173, 39, 39);
 }
 
 .features {
   padding-top: 122px;
+  padding-bottom: 49px;
   text-align: center;
-}
-
-.features__list {
-  margin-bottom: 49px;
 }
 
 .features__item {
   flex: 0 0 318px;
-  width: 318px;
+  max-width: 318px;
   margin-bottom: 73px;
 }
 
@@ -254,11 +250,11 @@ body {
   margin-bottom: 27px;
 }
 
-.overlay-wrap {
+.gallery__overlay-wrap {
   position: relative;
 }
 
-.overlay {
+.gallery__overlay {
   position: absolute;
   color: #fff;
   top: 0;
@@ -267,19 +263,21 @@ body {
   height: 100%;
   background-color: rgba(232, 69, 69, 0.9);
   text-align: center;
-  padding-top: 81px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   visibility: hidden;
   opacity: 0;
   transition: all 0.2s linear;
 }
 
-.overlay__title {
+.gallery__title {
   text-transform: uppercase;
   margin-bottom: 4px;
 }
 
-.gallery__item:hover .overlay,
-.gallery__item:focus .overlay {
+.gallery__item:hover .gallery__overlay,
+.gallery__item:focus .gallery__overlay {
   opacity: 1;
   visibility: visible;
 }
@@ -301,7 +299,7 @@ body {
 
 .teams__card:hover,
 .teams__card:focus {
-  transform: scale(1.05);
+  transform: translateY(-5px);
   border-bottom: 1px solid rgb(99, 99, 99);
 }
 
@@ -353,19 +351,18 @@ body {
 
 .teams__social-item:hover,
 .teams__social-item:focus {
-  transform: scale(1.1);
   background-color: #53354a;
 }
 
-.teams__facebook {
+.teams__social-item_facebook {
   background-image: url('../images/icon/facebook.png');
 }
 
-.teams__twitter {
+.teams__social-item_twitter {
   background-image: url('../images/icon/twitter.png');
 }
 
-.teams__linkidin {
+.teams__social-item_linkidin {
   background-image: url('../images/icon/linkidin.png');
 }
 
@@ -429,8 +426,7 @@ body {
 
 .download__btn:hover,
 .download__btn:focus {
-  box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
-  background-color: rgb(173, 39, 39);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .footer {
@@ -472,6 +468,7 @@ body {
 
   .cite__block-text {
     padding-left: 69px;
+    padding-right: 15px;
   }
 
   .cite__text {
@@ -529,6 +526,7 @@ body {
     margin-bottom: 40px;
     text-align: center;
   }
+
   .teams__social-list {
     display: flex;
     justify-content: center;
@@ -552,7 +550,7 @@ body {
   }
 
   .menu__item:not(:last-child) {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
 
   .cite__text {
